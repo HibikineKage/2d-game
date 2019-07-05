@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "rootDir": "src",
+    "typeRoots": ["./node_modules/@types", "./src/types"]
+  }
+}
