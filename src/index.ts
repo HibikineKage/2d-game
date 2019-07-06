@@ -1,37 +1,31 @@
 import * as Phaser from 'phaser';
+import rico from './assets/img/rico.png';
+import nyan from './assets/img/nyan.png';
 
+const 
+  keySetting = {
+    up: Phaser.Input.Keyboard.KeyCodes.W,
+    down: Phaser.Input.Keyboard.KeyCodes.S,
+    right: Phaser.Input.Keyboard.KeyCodes.D,
+    left: Phaser.Input.Keyboard.KeyCodes.A,
+    jump: Phaser.Input.Keyboard.KeyCodes.SPACE,
+  };
 class Main extends Phaser.Scene {
   preload() {
-    this.load.setBaseURL('http://labs.phaser.io');
-    this.load.image('sky', 'assets/skies/space3.png');
-    this.load.image('logo', 'assets/sprites/phaser3-logo.png');
-    this.load.image('red', 'assets/particles/red.png');
+    this.load.image('rico', rico);
+    this.load.image('nyan', nyan);
   }
 
   create() {
-    this.add.image(400, 300, 'sky');
+    const logo = this.physics.add.image(100, 100, 'nyan');
 
-    const particles = this.add.particles('red');
-
-    const emitter = particles.createEmitter({
-      speed: 100,
-      scale: { start: 1, end: 0 },
-      blendMode: 'ADD',
-    });
-
-    const logo = this.physics.add.image(400, 100, 'logo');
-
-    logo.setVelocity(100, 200);
     logo.setBounce(0, 0);
     logo.setFrictionX(1);
     logo.setCollideWorldBounds(true);
 
-    emitter.startFollow(logo);
-    this.input.keyboard.addKeys({
-      up: Phaser.Input.Keyboard.KeyCodes.W,
-      down: Phaser.Input.Keyboard.KeyCodes.S,
-    });
+    this.key = this.input.keyboard.addKeys(keySetting);
   }
+  key!: { [key in keyof typeof keySetting]: Phaser.Input.Keyboard.Key };
 }
 
 const config: Phaser.Types.Core.GameConfig = {
