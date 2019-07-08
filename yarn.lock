@@ -706,10 +706,10 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@hibikine/eslint-config@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@hibikine/eslint-config/-/eslint-config-0.6.1.tgz#74a291d23ff547e714973a7cd55e526fa86c2631"
-  integrity sha512-wsv4/kN7P3FEFs8dl4vNQ1SwQ1LPHGGGM0SsI+hv8AobYzNOxk6/Jda7b3MMYuU29oP4ckaybnBfFbtSVAXYoQ==
+"@hibikine/eslint-config@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@hibikine/eslint-config/-/eslint-config-0.7.0.tgz#2d7ce28afea5261bb541042e025d7dddcbb49869"
+  integrity sha512-bgxA2eiq8C+k7nQKgBnEhmM2kU8cKkMgZzC3Eki0CfyqaQH77vnYkKCNvjR9W7gn3whQwLDlghxBj6cob1X+jQ==
 
 "@iarna/toml@^2.2.0":
   version "2.2.3"
