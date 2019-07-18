@@ -7,7 +7,7 @@
   "author": "Hibikine Kage <goodsmile314159@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@hibikine/eslint-config": "^0.6.1",
+    "@hibikine/eslint-config": "^0.8.1",
     "@types/react": "^16.8.23",
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@typescript-eslint/parser": "^1.11.0",
