@@ -11,7 +11,7 @@
     "@types/react": "^16.8.23",
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@typescript-eslint/parser": "^1.11.0",
-    "eslint": "^6.0.1",
+    "eslint": "^6.4.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-import-resolver-node": "^0.3.2",
